@@ -1,0 +1,31 @@
+SQL Practice Question Set - 4
+1.What is the diffrence between Where and Having clause?
+2.What is th diffrence between union and union all?
+3.What is th diffrence between Intersection and Except(Minus)?
+4.What is th diffrence between Delete,Truncate and Drop?
+5.How will identify the table schema in a database?
+6.What is the diffrence between Rank and Dense Rank?
+7.What is the diffrence between varchar and nvarchar?
+8.What is the diffrence between char and nchar?
+9.7.What is the diffrence between char and varchar?
+10.what is the diff between not null key and primary key?
+11.what is the diffrence unique and null key?
+12.How many Null values we can insert into unique key column?
+13.What is the diffrence between primary key and foriegn key?
+14.What is the diffrence between DML and DDL?
+15.what is Co-Relation Sub Query and sub query?
+16.What is the diffrence between len() and Datalength()?
+17.How to take back up of table?
+18.How to copy the data from one table into another another table?
+19.How will you take the back up of database?
+20.What is diffrence between order by and group by?
+21.How we can insert selective records from one table into another table?
+22.How to display the structure of the table?
+23.How to change or rename the column name in a table?
+24.What is the age of your bank account?
+25.Calculate the no of accounts which is opened during the current year?
+26.What is the diffrence between DatePart,Datename and Dateadd?
+27.What is the diffrence between CONCAT() , CONCAT with + and CONCAT_WS()?
+28.What is the diffrence between Store procedure and trigger?
+29.What is the diffrence between View and store procedure?
+30.What is the Diifrence between clustered and Non-Clusterd index?

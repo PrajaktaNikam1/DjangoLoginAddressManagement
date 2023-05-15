@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'base1.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add A Number</title>
+</head>
+<body>
+{%block baseblock %}
+<div class="container mt-4">
+
+    <div class="row">
+        <div class="col-sm-6 mx-auto">
+            <h2 class="text-center alert alert-info">Add A New Mobile Number</h2>
+            <form method="post">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary" value="Add">
+                <input type="reset" class="btn btn-primary" value="Reset">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'base1.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Profile</title>
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+<body>
+{%block baseblock %}
+<section class="vh-200" style="background-color: #00DDB8;"><br>
+    <div class="container mt-4">
+        <a href="/user/profile_info/" class="btn btn-primary">Back to Profile Page</a>
+    </div>
+    <div class="col-lg-5 mx-auto">
+
+        <div class="card my-10 p-6">
+            <div class="card-body">
+                <div class="container mt-4">
+
+                    <div class="row">
+
+                        <div class="col-sm-11 mx-auto">
+                            <h2 class="text-center alert alert-info">Update Username here</h2>
+<!--                            <form method="post" class="form-label">-->
+<!--            <h2 class="text-center alert alert-info"></h2>-->
+            <form method="post" class="form-group" enctype="multipart/form-data">
+                {{form.as_p}}
+                {% csrf_token %}
+
+
+<!--                <center>Current Profile Photo<br><br></center>-->
+                {% if user.profile_img.image %}
+
+                 <img src="{{ user.profile_img.image.url }}" class="rounded mx-auto d-block" alt="Upload Image" width="200px" height="200px">{% endif %}
+<!--                 Name: <select name="user" class="form-control"> <option value="{{form.user}}" class="form-control">{{form.user}}</option></select><br>-->
+                Username: <input type="text" name="username" class="form-control" value="{{user.username}}" class="form-control"><br>
+<!--                 Choose Image:<input type="file" class="form-control form-control-sm" name="image"><br>-->
+
+                <input type="submit" class="btn btn-primary" value="Update">
+                <input type="reset" class="btn btn-primary" value="Reset">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+</body>
+</html>

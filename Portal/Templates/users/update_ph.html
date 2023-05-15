@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base1.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Number</title>
+</head>
+<body>
+{%block baseblock %}
+<div class="container mt-4">
+
+    <div class="row">
+        <div class="col-sm-6 mx-auto">
+            <h2 class="text-center alert alert-info">Update Mobile Number</h2>
+            <form method="post" class="form-group">
+                <div>
+                    {{form.as_p }}
+                    {% csrf_token %}
+                    Name: <input type="text" name="user" value="{{form.user}}"><br><br>
+                    Mobile Number: <input type="text" name="number" value="{{form.number}}"><br><br>
+
+                    <input type="submit" class="btn btn-primary" value="Update">
+                    <input type="reset" class="btn btn-primary" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
